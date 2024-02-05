@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Encryption using AES Algorithm</title>
+    <style>
+        /* Base styling */
+            body {
+                background-color: #121212; /* Dark background for a cybersecurity feel */
+                color: #ffffff;
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .heading {
+                color: #0dbf00; /* Neon green for the main heading */
+                margin-bottom: 40px;
+            }
+
+            /* Link container and link styling */
+            .link-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .link-container a {
+                background-color: #1e1e1e;
+                color: #ffffff;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                transition: background-color 0.3s ease, color 0.3s ease;
+                box-shadow: 0 0 10px 0 rgba(0, 255, 0, 0.7); /* Neon green glow */
+            }
+
+            .link-container a:hover {
+                background-color: #0dbf00; /* Neon green for hover */
+                color: #000000;
+            }
+
+            /* Responsive design for smaller screens */
+            @media (max-width: 600px) {
+                .link-container {
+                    flex-direction: column;
+                }
+                .link-container a {
+                    margin-bottom: 10px;
+                }
+            }
+
+        
+    </style>
+</head>
+<body>
+    <h1 class="heading">Image Encryption using AES Algorithm</h1>
+    <div class="link-container">
+        <a href="http://127.0.0.1:5000/encrypt">Encrypt an Image</a>
+        <a href="http://127.0.0.1:5000/decrypt">Decrypt an Image</a>
+    </div>
+</body>
+</html>

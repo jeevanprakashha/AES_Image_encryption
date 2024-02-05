@@ -1,0 +1,74 @@
+/* Base styling */
+body {
+    background-color: #121212; /* Dark background for a cybersecurity feel */
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #0dbf00; /* Neon green for titles */
+}
+
+/* Form styling */
+form {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0, 255, 0, 0.7); /* Neon green glow */
+    width: 300px;
+    text-align: left;
+}
+
+label {
+    color: #9c9c9c; /* Light grey for labels */
+}
+
+input[type="file"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #262626;
+    color: #ffffff;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0dbf00; /* Neon green for submit button */
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0ac200; /* Lighter green on hover */
+}
+
+/* Encryption key display */
+p {
+    color: #0dbf00; /* Neon green for the encryption key */
+    background-color: #262626;
+    padding: 10px;
+    border-radius: 4px;
+    word-break: break-all;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}

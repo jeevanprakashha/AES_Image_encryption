@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP</title>
+    <style>
+        body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #121212; /* Dark background for a cybersecurity feel */
+            }
+
+            .container {
+                text-align: center;
+                color: #ffffff; /* White text for better readability on dark background */
+            }
+
+            form {
+                background: #1e1e1e; /* Dark grey background for form */
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 255, 0, 0.3); /* Subtle green glow */
+            }
+
+            input, button {
+                margin-top: 10px;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                width: calc(100% - 22px);
+            }
+
+            input {
+                background-color: #262626;
+                color: #ffffff;
+            }
+
+            button {
+                background-color: #0dbf00; /* Neon green for button */
+                color: white;
+                cursor: pointer;
+                border: none;
+                transition: background-color 0.3s;
+            }
+
+            button:hover {
+                background-color: #0ac200; /* Lighter green on hover */
+            }
+
+            h2, p {
+                margin-bottom: 15px;
+            }
+
+            p {
+                color: #9c9c9c; /* Light grey for text */
+            }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter OTP</h2>
+        <p>Please check your email for the OTP and enter it below.</p>
+        <form action="/verify-otp" method="POST">
+            <input type="text" name="otp" placeholder="Enter OTP" required><br>
+            <button type="submit">Verify</button>
+        </form>
+    </div>
+</body>
+</html>
